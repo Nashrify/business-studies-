@@ -27,7 +27,63 @@
         <h3 class="text-3xl font-bold">Form Two Topics Covered</h3>
         <p class="text-gray-500 mt-2">Select a topic to access the corresponding study materials</p>
       </div>
-    </div><div id="notesGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </div><div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+  <!-- Topic 1 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
+    <div class="bg-indigo-100 p-4 flex justify-center">
+      <img src="FORM-2-BUSINESS-STUDIES.jpg" alt="Production" class="h-32 object-contain" />
+    </div>
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="font-bold text-lg text-indigo-800">Production</h3>
+        <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Topic 1</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-4">Form Two Business Studies – Production</p>
+      <div class="flex justify-between items-center">
+        <p class="text-sm text-gray-500">DOCX</p>
+        <a href="production.docx" download class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition text-sm">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topic 2 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
+    <div class="bg-indigo-100 p-4 flex justify-center">
+      <img src="FORM-2-BUSINESS-STUDIES.jpg" alt="Financing Small-Sized Businesses" class="h-32 object-contain" />
+    </div>
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="font-bold text-lg text-indigo-800">Financing Small-Sized Businesses</h3>
+        <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Topic 2</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-4">Form Two Business Studies – Financing</p>
+      <div class="flex justify-between items-center">
+        <p class="text-sm text-gray-500">PDF</p>
+        <a href="topic-2-financing-small-businesses.pdf" download class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition text-sm">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topic 3 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
+    <div class="bg-indigo-100 p-4 flex justify-center">
+      <img src="FORM-2-BUSINESS-STUDIES.jpg" alt="Small Business Management" class="h-32 object-contain" />
+    </div>
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="font-bold text-lg text-indigo-800">Small Business Management</h3>
+        <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Topic 3</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-4">Form Two Business Studies – Management</p>
+      <div class="flex justify-between items-center">
+        <p class="text-sm text-gray-500">PDF</p>
+        <a href="topic-3-small-business-management.pdf" download class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition text-sm">Download</a>
+      </div>
+    </div>
+  </div>
+
+</div>
 
   </section>  <!-- About -->  <section id="about" class="bg-white py-16">
     <div class="max-w-4xl mx-auto px-6 text-center">
@@ -39,31 +95,5 @@
       <p>&copy; 2026 Form Two Business Studies. All rights reserved.</p>
       <p>Educational Resource • Static Website Architecture</p>
     </div>
-  </footer>  <!-- JavaScript -->  <script>
-    const notes = [
-      { title: "Production", tag: "Topic 1", file: "production.docx" },
-      { title: "Financing Small-Sized Businesses", tag: "Topic 2", file: "notes/topic-2-financing-small-businesses.pdf" },
-      { title: "Small Business Management", tag: "Topic 3", file: "notes/topic-3-small-business-management.pdf" },
-      { title: "Warehousing & Inventory Management", tag: "Topic 4", file: "notes/topic-4-warehousing-inventory-management.pdf" },
-      { title: "Identification of Business Opportunities", tag: "Topic 5", file: "notes/topic-5-business-opportunities.pdf" }
-    ];
-
-    const grid = document.getElementById('notesGrid');
-
-    notes.forEach(note => {
-      const card = document.createElement('div');
-      card.className = "group bg-white rounded-2xl border shadow-sm hover:shadow-lg transition overflow-hidden";
-      card.innerHTML = `
-        <div class="p-6">
-          <span class="inline-block mb-3 px-3 py-1 text-xs font-semibold bg-indigo-50 text-indigo-600 rounded-full">${note.tag}</span>
-          <h4 class="text-lg font-semibold mb-4 group-hover:text-indigo-600 transition">${note.title}</h4>
-          <a href="${note.file}" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-indigo-600 hover:underline">
-            Download Notes
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
-  </script></body>
+  </footer></body>
 </html>
